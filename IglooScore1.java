@@ -50,7 +50,7 @@ public static void main(String args[])
 {
    int s1, s2, s3;
    if (args.length != 3) {
-      System.err.println("Error: must supply three arguments!");
+      System.err.println("Error: must supply 3 arguments!");
       return;
    }
    try {
@@ -61,9 +61,23 @@ public static void main(String args[])
       System.err.println("Error: arguments must be integers!");
       return;
    }
+   
+   if ( s1 < 0 || s1 > 50 ) {
+      System.err.println("Error: scores must be between 0 and 50");
+      return;
+   }
+   if ( s2 < 0 || s2 > 50 ) {
+      System.err.println("Error: scores must be between 0 and 50");
+      return;
+   }
+   if ( s3 < 0 || s3 > 50 ) {
+      System.err.println("Error: scores must be between 0 and 50");
+      return;
+   }
+   
    IglooScore1 score = new IglooScore1();
    score.recordScores(s1,s2,s3);
-   System.out.println("Overall score: " + score.overallScore());
+   System.out.println("Overall score(1): " + score.overallScore());
    return;
 }
 

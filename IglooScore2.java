@@ -35,19 +35,17 @@ public void recordScores(int s1, int s2, int s3)
 
 public int overallScore()
 {
-   int s, s1, s2;
-   if (score1 < score2 && score1 < score3) {
+   int s;
+   int s1 = 0, s2 = 0;
+   if (score1 <= score2 && score1 <= score3) {
       s1 = score2;
       s2 = score3;
-   } else if (score2 < score1 && score2 < score3) {
+   } else if (score2 <= score1 && score2 <= score3) {
       s1 = score1;
       s2 = score2;
-   } else if (score3 < score1 && score3 < score2) {
+   } else if (score3 <= score1 && score3 <= score2) {
       s1 = score1;
       s2 = score2;
-   } else {
-      s1 = 99;
-      s2 = 99;
    }
    s = s1 + s2;
    return s;
@@ -56,8 +54,8 @@ public int overallScore()
 public static void main(String args[])
 {
    int s1, s2, s3;
-   if (args==null || args.length != 3) {
-      System.err.println("Error: must supply three arguments!");
+   if ( args.length != 3) {
+      System.err.println("Error: must supply 3 arguments!");
       return;
    }
    try {
@@ -74,7 +72,7 @@ public static void main(String args[])
    }
    IglooScore2 score = new IglooScore2();
    score.recordScores(s1,s2,s3);
-   System.out.println("Overall score: " + score.overallScore());
+   System.out.println("Overall score(2): " + score.overallScore());
    return;
 }
 

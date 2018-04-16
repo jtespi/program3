@@ -1,0 +1,21 @@
+Documentation for program 3
+By Jacob Espinoza
+2018 April 16
+
+* Fixed computation for overallScore in IglooScore2
+Comparisons now use less-than-or-equal-to and greater-than-or-equal-to
+  instead of just less-than and greater-than
+  
+* Fixed a logic issue in IglooScore2
+Entering all scores as 50 would result in total score of 198.
+Changed the program to set the two used scores to be 50 and 50 instead of 99 and 99.
+Now the maximum score is 100.
+
+* IglooScore1 checks for valid scores now
+Prints an error message when scores are < 0 or > 50.
+
+* Removed check for null args in IglooScore2
+The check for arguments not being 3 is sufficient enough.
+Arguments will almost never be null, therefore it is unneccessary code.
+
+

@@ -36,9 +36,144 @@
          <arg value="8"/><arg value="9"/><arg value="6"/>
          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
       </java>
+      <echo message="TEST IglooScore1: 48 5 9"/>
+      <java classname="IglooScore1" fork="true">
+         <arg value="48"/><arg value="5"/><arg value="9"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 84 5 9"/>
+      <java classname="IglooScore1" fork="true">
+         <arg value="84"/><arg value="5"/><arg value="9"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: -1 56 50"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="-1"/><arg value="56"/><arg value="50"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 10 56 50"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="10"/><arg value="56"/><arg value="50"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 10 -5 50"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="10"/><arg value="-5"/><arg value="50"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 10 33 95"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="10"/><arg value="33"/><arg value="95"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 10 33 -9"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="10"/><arg value="33"/><arg value="-9"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 50 51"/>
+      <java classname="IglooScore1" fork="true">
+         <arg value="50"/><arg value="51"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 9.9 20.2 33.3"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="9.9"/><arg value="20.2"/><arg value="33.3"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 40 40 40"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="40"/><arg value="40"/><arg value="40"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: 50 50 50"/>
+      <java classname="IglooScore1" fork="true">
+          <arg value="50"/><arg value="50"/><arg value="50"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore1: "/>
+      <java classname="IglooScore1" fork="true">
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      
+      <echo message=""/>
+      <echo message="*** Now running tests on IglooScore2 ***"/>
+      <echo message=""/>
+      
+      <echo message="TEST IglooScore2: 36 39 46"/>
+      <java classname="IglooScore2" fork="true">
+         <arg value="36"/><arg value="39"/><arg value="46"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
       <echo message="TEST IglooScore2: 8 9 6"/>
       <java classname="IglooScore2" fork="true">
          <arg value="8"/><arg value="9"/><arg value="6"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2: 48 5 9"/>
+      <java classname="IglooScore2" fork="true">
+         <arg value="48"/><arg value="5"/><arg value="9"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2: 12 35 49"/>
+      <java classname="IglooScore2" fork="true">
+         <arg value="12"/><arg value="35"/><arg value="49"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      
+      <echo message="TEST IglooScore2: -1 16 10"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="-1"/><arg value="16"/><arg value="10"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2: 56 40 40"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="56"/><arg value="40"/><arg value="40"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2:10 56 50"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="10"/><arg value="56"/><arg value="50"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2:10 -99 50"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="10"/><arg value="-99"/><arg value="50"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2:10 12 -50"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="10"/><arg value="12"/><arg value="-50"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2:10 12 999"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="10"/><arg value="12"/><arg value="999"/>
+          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      
+      <echo message="TEST IglooScore2: 50 51"/>
+      <java classname="IglooScore2" fork="true">
+         <arg value="50"/><arg value="51"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2: 23.9 50.6 62.0"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="23.9"/><arg value="50.6"/><arg value="62.0"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2: 40 40 40"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="40"/><arg value="40"/><arg value="40"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2: 50 50 50"/>
+      <java classname="IglooScore2" fork="true">
+          <arg value="50"/><arg value="50"/><arg value="50"/>
+         <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
+      </java>
+      <echo message="TEST IglooScore2: "/>
+      <java classname="IglooScore2" fork="true">
          <jvmarg line="-javaagent:${jacocodir}/jacocoagent.jar"/>
       </java>
    </target>
