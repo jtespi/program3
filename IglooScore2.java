@@ -38,12 +38,15 @@ public int overallScore()
    int s;
    int s1 = 0, s2 = 0;
    if (score1 <= score2 && score1 <= score3) {
+      // score 1 is the smallest
       s1 = score2;
       s2 = score3;
    } else if (score2 <= score1 && score2 <= score3) {
+      // score 2 is the smallest
       s1 = score1;
-      s2 = score2;
-   } else if (score3 <= score1 && score3 <= score2) {
+      s2 = score3;
+   } else {
+      // score 3 is the smallest
       s1 = score1;
       s2 = score2;
    }
