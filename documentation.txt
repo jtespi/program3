@@ -1,4 +1,4 @@
-Documentation for program 3
+Documentation/changelog for program 3
 By Jacob Espinoza
 2018 April 16
 
@@ -13,6 +13,9 @@ Now the maximum score is 100.
 
 * IglooScore1 checks for valid scores now
 Prints an error message when scores are < 0 or > 50.
+
+* Fixed incorrect assignments in IglooScore1
+Now properly computes the total without the lowest score
 
 * Removed check for null args in IglooScore2
 The check for arguments not being 3 is sufficient enough.
